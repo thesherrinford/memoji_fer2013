@@ -40,3 +40,17 @@ if __name__ == '__main__':
 		'--output_file', type=str, help='Where to save the frozen graph.')
 	FLAGS, unparsed = parser.parse_known_args()
 	main(FLAGS)
+	
+	
+def gcd(m,n):
+    if(m>n):
+        (m,n)=(n,m)
+    if(n%m==0)
+        return m;
+    else:
+        return (gcd(n,(m%n)))
+        
+            
+    
+    
+    
